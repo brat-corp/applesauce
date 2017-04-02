@@ -1,15 +1,15 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
-  "background": {
-    "persistent": true,
-    "scripts": ["src/js/main.js"]
-  },
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  }
+    "name": "Getting started example",
+    "description": "This extension shows a Google Image search result for the current page",
+    "version": "1.0",
+    "background": {
+        "persistent": true,
+        "scripts": ["src/js/dictionary/dictionary.js", "src/js/main.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    }
 }
