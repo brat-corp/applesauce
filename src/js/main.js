@@ -1,3 +1,6 @@
 let dictionary = new Dictionary();
+let httpRequest = new HttpRequest();
 
-console.log(dictionary.randomUrl);
+httpRequest.get(dictionary.randomUrl, function(o) {
+    console.log(o)
+});
