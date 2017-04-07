@@ -15,9 +15,11 @@ function getLogRequests() {
 }
 
 window.setInterval(function () {
-    let url = dictionary.randomUrl;
-    httpRequest.get(url);
-    if (logRequests) {
-        console.log(url);
+    if (navigator.onLine) {
+        let url = dictionary.randomUrl;
+        httpRequest.get(url);
+        if (logRequests) {
+            console.log(url);
+        }
     }
 }, interval);
